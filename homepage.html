@@ -1,0 +1,207 @@
+<html>
+	<head>
+		<style>
+			.tophead
+			{
+				background-color:red;
+				color:white;
+				width:100%;
+							
+			}
+			.navigation_bar
+			{
+				background-color:black;
+				color:red;
+				height:50px;
+			}
+			.navigation_bar ul 
+			{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+			}	
+			.navigation_bar li
+			{
+				float:left;
+			}	
+			.navigation_bar li a 
+			{
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.navigation_bar li a:hover:not(.active)
+			{
+				background-color: green;
+			}
+
+           .navigation_bar .active 
+		    {
+               background-color: #4CAF50;
+			}
+			
+			.mySlides
+			{
+				display:none;
+			}
+			
+			.intro
+			{
+				background-color:white;
+				font-size:20px;
+				
+			}
+			.footer
+			{
+				background-color:red;
+				width:100%;
+				color:white;				
+			}
+	
+		
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="tophead">
+				<p style="font-size:18px; font-family:Arial;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9742; <strong>022 6525 0123 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&#9875; Email : info@oneworldlogistic.com</strong>
+				</p>
+			</div>		
+			
+			<div>
+				<img src="oneworld.png" alt="one world logistics">
+			</div>
+			
+			<div class="navigation_bar">
+				<ul>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#services">SERVICES</a></li>
+					<li><a href="#aboutus">ABOUT US</a></li>
+					<li><a href="#contactus">CONTACT US</a></li>
+				</ul>
+			</div>
+			
+			<div class="slider">
+				<img class="mySlides" src="slider1.jpg" width="1350px" height="400px">
+				<img class="mySlides" src="slider2.jpg" width="1350px" height="400px">
+				<img class="mySlides" src="slider3.jpg" width="1350px" height="400px">
+				<img class="mySlides" src="slider4.jpg" width="1350px" height="400px">
+			</div>
+				
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel()
+				{
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) 
+					{
+						x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 2000);
+				}
+			</script>
+			<br><br>
+				
+		
+			<div class="services" id="services" style="background-color:LightGray;">
+				<center><p style="font-size:30px;color:red;padding:10px">Our Services</p></center>
+				<div class="services_info" style="padding:30px;">
+					<img src="air.jpg" width="250px" style="float:left">
+					<center><p style="font-size:20px;color:blue">&nbsp;&nbsp;&nbsp;&nbsp;AIR FREIGHT</p></center>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;One World Logistics offers airfreight services to and from all the major cities in the world. With our import and export services and the agents’ network, we &nbsp;&nbsp;&nbsp;&nbsp;are able to provide speedy and efficient service which will reduce not only the freight costs but also the transportation time.</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;Our Airfreight Dept handles DDU / DDP / Air-Sea Shipment on monthly by using the services of all the major airlines which provide connection to all &nbsp;&nbsp;&nbsp;&nbsp;major airports world wide</p>
+					<br><br>
+					
+					<img src="sea.jpg" width="250px" style="float:left">
+					<center><p style="font-size:20px;color:blue">&nbsp;&nbsp;&nbsp;&nbsp;SEA FREIGHT</p></center>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;Choose our sea freight services when costs are your primary concern, time is not a factor or your shipments are large and heavy. We ship significant volumes &nbsp;&nbsp;&nbsp;&nbsp;every year, which enables us to offer you capacity, frequent departures and competitive rates. We also offer a vast choice of destinations from every major &nbsp;&nbsp;&nbsp;&nbsp;port in the world for both intercontinental and short sea routes.</p>
+					<br><br>
+					
+					<img src="warehouse.jpg" width="250px" style="float:left">
+					<center><p style="font-size:20px;color:blue">&nbsp;&nbsp;&nbsp;&nbsp;WAREHOUSING</p></center>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;Pan India network of warehouses with inventory control & distribution services.Tactically located Logix Parks designed to support global trade & Just In &nbsp;&nbsp;&nbsp;&nbsp;Time SCM needs.</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;Our custom-bonded or general warehouses network, save expense/investment of maintaining warehousing facilities in multiple locations.Provides door to &nbsp;&nbsp;&nbsp;&nbsp;door delivery of goods, including landing cost calculations, declarations & reporting, monitoring, port authority charges etc.</p>
+					<br><br>
+					
+					<img src="road.jpg" width="250px" style="float:left">
+					<center><p style="font-size:20px;color:blue">&nbsp;&nbsp;&nbsp;&nbsp;ROAD LOGISTICS</p></center>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;When you need to move cargo domestically or across Europe, we can always find room on one of our trucks. With traffic hubs strategically located all &nbsp;&nbsp;&nbsp;&nbsp;over Europe and 17,000 trucks on the road every day, your cargo will be delivered wherever and whenever specified.</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;Domestic shipments and shipments to neighbouring countries can be completed within 24-48 hours.For more remote or exotic destinations in Europe we &nbsp;&nbsp;&nbsp;&nbsp;offer delivery within one to five days no matter your destination. Because we have more than 200 terminals and 300 offices in Europe. </p>
+				</div>			
+		    </div>
+		
+			
+			<div class="info" id="aboutus" style="font-size:30px;">
+				<center><p style="color:red">About Us</p></center>
+				<div class="intro">  
+					<img src="office.jpg" style="float:left;"><p>&nbsp;&nbsp;One World Logistics PVT.LTD having registered office at Mumbai and Branch office at North / West / &nbsp;&nbsp;South part of INDIA is a private company operating in the field of Clearance, Shipping & logistics, &nbsp;&nbsp;covering international trade. It provides tailor made services for your individual needs. Being an service &nbsp;&nbsp;organization with an extensive network of correspondents in several countries that personalizes its &nbsp;&nbsp;presence and consider interest of our clients, Three Ways Logistics PVT.LTD works on behalf of its &nbsp;&nbsp;customers to ensure the transport of exported and imported goods is carried with exemplary conditions &nbsp;&nbsp;of reliability and competitively.</p>
+					<p>&nbsp;&nbsp;With our experience we aim to always provide professional, comprehensive and efficient services, &nbsp;&nbsp;combined with that personal touch you expect. Experienced, trained staff with many years of experience &nbsp;&nbsp;co-ordinate the routes to and from all European destinations. GoCargoServices.co.uk has a route service &nbsp;&nbsp;available to cater for small to very large moves.</p>
+					<p>&nbsp;&nbsp;We are committed to provide the best of services to our valued clients. Our experienced customer service &nbsp;&nbsp;team will ensure end to end coordination of every shipment. We have a dedicated Key Account Manager for every client.With state of the art System we provide Client Link portal where the client can login to get Shipment Status/DSR/Invoice/Destuffing Status etc.</p>
+				</div>
+			</div>
+			<br>			
+			
+			<div id="contactus" style="background-color:black;">
+				
+			<div class="office" style="float:left;background-color:black;color:white;width:400px;height:152px">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Head Office :--</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B1-002, Boomerang,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chandivali Farm Road,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chandivali,Andheri (East),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mumbai 400072</p>
+			</div>
+			
+			<div class="contact" style="float:left;background-color:black;color:white;width:450px;height:152px">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Details :--</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&#9875;&nbsp;&nbsp;info@oneworldlogistic.com</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&#9742 022 6525 0123</p>
+			</div>
+			
+			<div class="hrs" style="float:left;background-color:black;color:white;width:483px">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Business Hours :--</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monday-Friday: 10 am to 7 pm</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saturday: 10 am to 2 pm</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunday: Closed</p>
+			</div>
+				
+
+			</div><br><br>
+			
+			<div class="footer">
+				<span style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created By - <mark>Suraj More</mark></span>
+				<span style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Andheri (west), Mumbai - 400 058.</span>
+				<span style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: +91 8879480506</span>
+			</div>
+			
+		</div>
+		
+		
+			
+			
+		
+	</body>
+	
+</html>
